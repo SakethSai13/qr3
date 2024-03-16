@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirected Page</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .paragraph {
+            font-family: cursive;
+            font-size: 16px;
+            color: black;
+            text-align: center;
+            line-height: 1.6;
+            max-width: 90%;
+            overflow-wrap: break-word;
+        }
+    </style>
+    <script>
+        var set = window.onload;
+
+        function checktest() {
+            var test = prompt("Please enter the password:");
+            if (test !== "2862") {
+                set = checktest;
+            } else {
+                var paragraph = "BEST CHAPTERS OF MY LIFE!\n\nINDEX\n-Intro\n-Missing bigiluuu\n-Realize\n-Me\n-Insecurities\n-Maturity\n-Moments\n-Pedhollu\n-Books\n-Obsession\n-Last page";
+
+                document.body.style.backgroundImage = "none";
+                document.body.innerHTML = '<div class="paragraph">' + paragraph.replace(/\n/g, "<br>") + '</div>';
+            }
+        }
+        window.onload = checktest;
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
